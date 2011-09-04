@@ -24,14 +24,14 @@ body{font-size:13px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica
 body header.site{width:960px;margin:0 auto;zoom:1;margin-bottom:1em;}
 body header.site:before,body header.site:after{content:"";display:table}
 body header.site:after{clear:both}
-body header.site > ul{border:1px solid #dcdcdc;margin:0 .5em;background:#fff;zoom:1;}
+body header.site > ul{border:1px solid #dcdcdc;margin:0 6.5px;background:#fff;zoom:1;}
 body header.site > ul:before,body header.site > ul:after{content:"";display:table}
 body header.site > ul:after{clear:both}
 body header.site > ul > li{float:left;border-right:1px solid #dcdcdc;}
-body header.site > ul > li > a,body header.site > ul > li > span{display:block;line-height:39px;padding:0 13px;width:155.75px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-weight:bold}
+body header.site > ul > li > a,body header.site > ul > li > span{display:block;line-height:39px;padding:0 13px;width:154.75px;-webkit-box-sizing:border-box;-moz-box-sizing:border-box;box-sizing:border-box;font-weight:bold}
 body header.site > ul > li.branding a{width:320px;font-weight:bold;font-size:125%;color:#333}
 body header.site > ul > li.account{position:relative;((null)):0;((null)):0;border-right:none;}
-body header.site > ul > li.account span{font-weight:bold;display:block;position:relative;((null)):0;((null)):0;}
+body header.site > ul > li.account span{display:block;position:relative;((null)):0;((null)):0;}
 body header.site > ul > li.account span:after{content:"";height:19px;width:19px;background:#ddd;position:absolute;top:.75em;right:.5em}
 body header.site > ul > li.account ul{position:absolute;top:3em;left:-1px;width:159px;display:none;background:#fff;border:1px solid #dcdcdc;}
 body header.site > ul > li.account ul li a{display:block;line-height:2em;padding:0 .5em}
