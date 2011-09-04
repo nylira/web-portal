@@ -2,26 +2,99 @@
 <html lang="en">
 <head>
   <meta charset="utf-8">
-  <title>New Project</title>
+  <title>Web Portal</title>
   <meta name="author" content="Peng Zhong">
   <link rel="stylesheet" media="screen" href="c/style.css?v=1">
-  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.1/jquery.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.6.2/jquery.js"></script>
   <script src="http://ajax.cdnjs.com/ajax/libs/json2/20110223/json2.js"></script> 
-  <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.6/underscore-min.js"></script> 
-  <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.3.3/backbone-min.js"></script> 
+  <script src="http://ajax.cdnjs.com/ajax/libs/underscore.js/1.1.7/underscore-min.js"></script> 
+  <script src="http://ajax.cdnjs.com/ajax/libs/backbone.js/0.5.3/backbone-min.js"></script> 
   <script src="js/script.js"></script>
 </head>
 
 <body>
 
-<header>
-  <h1><a href="#">Clean Slate</a></h1>
+<header class="site">
+  <ul>
+    <li class="branding"><a href="#">Web Portal</a>
+    <li class="company"><a href="#">Active Company</a>
+    <li class="sysettings"><a href="#">System Settings</a>
+    <li class="maximize"><a href="#">Maximize Display</a>
+    <li class="account">
+      <span class="label">Peng Zhong</span>
+      <ul>
+        <li><a href="#">User Settings</a>
+        <li><a href="#">Help</a>
+        <li><a href="#">Logout</a>
+      </ul>
+  </ul>
 </header>
 
-<div class="content">
-  <p>Hi!</p>
+<div class="site modules">
+  <ul class="modules">
+    <li><a href="#">Module 1</a>
+    <li><a href="#">Module 2</a>
+    <li><a href="#">Module 3</a>
+    <li><a href="#">Module 4</a>
+    <li><a href="#">Module 5</a>
+  </ul>
 </div>
 
-<footer>
+<div class="site content">
+
+  <div class="widget small">
+    <header>
+      <h1>Widget Title
+    </header>
+    <div class="content">
+    </div>
+  </div>
+
+  <div class="widget small">
+    <header>
+      <h1>Widget Title
+    </header>
+    <div class="content">
+    </div>
+  </div>
+
+  <div class="widget small">
+    <header>
+      <h1>Widget Title
+    </header>
+    <div class="content">
+    </div>
+  </div>
+  <div class="widget small">
+    <header>
+      <h1>Widget Title
+    </header>
+    <div class="content">
+    </div>
+  </div>
+  <div class="widget small">
+    <header>
+      <h1>Widget Title
+    </header>
+    <div class="content">
+    </div>
+  </div>
+  <div class="widget small">
+    <header>
+      <h1>Widget Title
+    </header>
+    <div class="content">
+    </div>
+  </div>
+
+</div>
+
+<a id="feedback" href="#">Feedback</a>
+
+<footer class="social">
+  Social Bar
+</footer>
+
+<footer class="site">
   <p>&copy; 2011 <a href="//nylira.com">Peng Zhong</a></p>
 </footer>

@@ -1,13 +1,15 @@
 @import 'n/all'
 @import 'm/all'
 
-x = 14px
+x = 13px
+txt = #333
+dim = #999
 
 df()
   s x
   lh 1.5
   ff sans
-  c #333
+  c txt
 
 link = #0be
 hover = #0cf
@@ -18,19 +20,122 @@ a
   &:hover, &:focus
     c hover
 
-html
-  height 100%
-
 body
   df()
-  bg #fff
+  bg m243
   oy scroll
 
-  .content
-    w 200px
-    h 100px
-    m 0 auto
-    bg #f00
-    s x*4
-    bz 5px #000 #f00 #0f0 #00f
-    abs top 20px right 20px
+  header.site
+    cnt()
+    mb 1em
+    > ul
+      b 1px solid m220
+      m 0 .5em
+      bg #fff
+      clearfix()
+      > li
+        float left
+        br 1px solid m220
+        > a, > span
+          d block
+          lh x*3
+          p 0 x
+          w cw*2 - x*.25 - 1px
+          box-sizing border-box
+          fw bold
+        &.branding
+          a
+            w cw*4
+            fw bold
+            s 125%
+            c txt
+        &.account
+          relative()
+          br none
+          span
+            fw bold
+            d block
+            relative()
+            &:after
+              content ''
+              r 19px
+              bg #ddd
+              absolute top .75em right .5em
+          ul
+            absolute top 3em left -1px
+            width cw*2 - 1px
+            d none
+            bg #fff
+            b 1px solid m220
+            li
+              a
+                d block
+                lh 2em
+                p 0 .5em
+          &:hover
+            ul
+              d block
+
+  .site.modules
+    cnt()
+    mb 2em
+    ul.modules
+      bt 1px solid #ddd
+      m 0 .5em
+      li
+        fl left
+        bl 1px dashed #ddd
+        a
+          d block
+          p 0 1em
+          lh 3em
+          c txt
+          &:hover
+            c txt
+            td underline
+
+  .site.content
+    cnt()
+    .widget
+      col 4
+      m 0 0 2em
+      header
+        m 0 x*.5
+        p 0 .5em
+        f 1.25em/2 sans
+        b 1px solid m220
+        bb 1px solid m235
+        bg #fff
+      .content
+        m 0 .5em
+        h 300px
+        b 1px solid m220
+        bt none
+        bg #fff url(../i/chart.png) -35px center no-repeat
+
+  a#feedback
+    f 1.25em/2 sans
+    p 0 .5em
+    bg #fff
+    b 1px solid m220
+    color txt
+    fixed top 45% left -2%
+    aa()
+    transform rotate(90deg)
+
+  footer.social
+    span 12
+    fixed left 50% bottom 0
+    p 0 .5em
+    ml -480px
+    lh 2em
+    bg #fff
+    b 1px solid m220
+    bb none
+
+  footer.site
+    cnt()
+    p 0 0 3em
+    p
+      lh 3em
+      p 0 .5em
