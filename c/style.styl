@@ -26,7 +26,7 @@ body
   oy scroll
 
   header.site
-    cnt()
+    w 100%
     mb 1em
     > ul
       b 1px solid m220
@@ -76,25 +76,49 @@ body
               d block
 
   .site.modules
-    cnt()
     mb 2em
+    clearfix()
     ul.modules
       bt 1px solid #ddd
       m 0 .5em
-      li
+      > li
         fl left
-        bl 1px dashed #ddd
-        a
+        relative()
+        &:hover 
+          > a
+            c txt
+            bg #fff
+            b 1px solid #ccc
+            bb none
+          ul
+            d block
+        > a
           d block
           p 0 1em
-          lh 3em
+          lh x*3 - 2px
           c txt
-          &:hover
-            c txt
-            td underline
+          b 1px solid transparent
+          bl 1px dashed #ddd
+        ul
+          span 2
+          d none
+          p .25em 0
+          absolute top x*3 - 5px left 0
+          bg #fff
+          b 1px solid #ccc
+          li
+            a
+              d block
+              p 0 1em
+              lh 2em
+              c txt
+              &:hover
+                bg #eee
+                td underline
 
   .site.content
-    cnt()
+    mr x*.5
+    clearfix()
     .widget
       col 4
       m 0 0 2em
@@ -118,7 +142,7 @@ body
     bg #fff
     b 1px solid m220
     color txt
-    fixed top 45% left -2%
+    fixed top 45% right -2%
     aa()
     transform rotate(90deg)
 
@@ -133,7 +157,6 @@ body
     bb none
 
   footer.site
-    cnt()
     p 0 0 3em
     p
       lh 3em

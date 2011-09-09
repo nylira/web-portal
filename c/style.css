@@ -21,9 +21,7 @@ span.amp{font-family:Baskerville,Palatino,"Book Antiqua",Georgia,"serif";font-st
 a{color:#0be;text-decoration:none;}
 a:hover,a:focus{color:#0cf}
 body{font-size:13px;line-height:1.5;font-family:"Helvetica Neue",Arial,Helvetica,sans-serif;color:#333;background:#f3f3f3;overflow-y:scroll;}
-body header.site{width:960px;margin:0 auto;zoom:1;margin-bottom:1em;}
-body header.site:before,body header.site:after{content:"";display:table}
-body header.site:after{clear:both}
+body header.site{width:100%;margin-bottom:1em;}
 body header.site > ul{border:1px solid #dcdcdc;margin:0 6.5px;background:#fff;zoom:1;}
 body header.site > ul:before,body header.site > ul:after{content:"";display:table}
 body header.site > ul:after{clear:both}
@@ -36,22 +34,24 @@ body header.site > ul > li.account span:after{content:"";height:19px;width:19px;
 body header.site > ul > li.account ul{position:absolute;top:3em;left:-1px;width:159px;display:none;background:#fff;border:1px solid #dcdcdc;}
 body header.site > ul > li.account ul li a{display:block;line-height:2em;padding:0 .5em}
 body header.site > ul > li.account:hover ul{display:block}
-body .site.modules{width:960px;margin:0 auto;zoom:1;margin-bottom:2em;}
+body .site.modules{margin-bottom:2em;zoom:1;}
 body .site.modules:before,body .site.modules:after{content:"";display:table}
 body .site.modules:after{clear:both}
 body .site.modules ul.modules{border-top:1px solid #ddd;margin:0 .5em;}
-body .site.modules ul.modules li{float:left;border-left:1px dashed #ddd;}
-body .site.modules ul.modules li a{display:block;padding:0 1em;line-height:3em;color:#333;}
-body .site.modules ul.modules li a:hover{color:#333;text-decoration:underline}
-body .site.content{width:960px;margin:0 auto;zoom:1;}
+body .site.modules ul.modules > li{float:left;position:relative;((null)):0;((null)):0;}
+body .site.modules ul.modules > li:hover > a{color:#333;background:#fff;border:1px solid #ccc;border-bottom:none}
+body .site.modules ul.modules > li:hover ul{display:block}
+body .site.modules ul.modules > li > a{display:block;padding:0 1em;line-height:37px;color:#333;border:1px solid transparent;border-left:1px dashed #ddd}
+body .site.modules ul.modules > li ul{width:160px;display:none;padding:.25em 0;position:absolute;top:34px left 0;((null)):0;background:#fff;border:1px solid #ccc;}
+body .site.modules ul.modules > li ul li a{display:block;padding:0 1em;line-height:2em;color:#333;}
+body .site.modules ul.modules > li ul li a:hover{background:#eee;text-decoration:underline}
+body .site.content{margin-right:6.5px;zoom:1;}
 body .site.content:before,body .site.content:after{content:"";display:table}
 body .site.content:after{clear:both}
 body .site.content .widget{width:320px;float:left;-webkit-box-sizing:;-moz-box-sizing:;box-sizing:;margin:0 0 2em;}
 body .site.content .widget header{margin:0 6.5px;padding:0 .5em;font:1.25em/2 "Helvetica Neue",Arial,Helvetica,sans-serif;border:1px solid #dcdcdc;border-bottom:1px solid #ebebeb;background:#fff}
 body .site.content .widget .content{margin:0 .5em;height:300px;border:1px solid #dcdcdc;border-top:none;background:#fff url("../i/chart.png") -35px center no-repeat}
-body a#feedback{font:1.25em/2 "Helvetica Neue",Arial,Helvetica,sans-serif;padding:0 .5em;background:#fff;border:1px solid #dcdcdc;color:#333;position:fixed;top:45%;left:-2%;-webkit-font-smoothing:antialiased;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);transform:rotate(90deg)}
+body a#feedback{font:1.25em/2 "Helvetica Neue",Arial,Helvetica,sans-serif;padding:0 .5em;background:#fff;border:1px solid #dcdcdc;color:#333;position:fixed;top:45%;right:-2%;-webkit-font-smoothing:antialiased;-webkit-transform:rotate(90deg);-moz-transform:rotate(90deg);transform:rotate(90deg)}
 body footer.social{width:960px;position:fixed;left:50%;bottom:0;padding:0 .5em;margin-left:-480px;line-height:2em;background:#fff;border:1px solid #dcdcdc;border-bottom:none}
-body footer.site{width:960px;margin:0 auto;zoom:1;padding:0 0 3em;}
-body footer.site:before,body footer.site:after{content:"";display:table}
-body footer.site:after{clear:both}
+body footer.site{padding:0 0 3em;}
 body footer.site p{line-height:3em;padding:0 .5em}
